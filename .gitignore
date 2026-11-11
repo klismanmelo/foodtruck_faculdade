@@ -1,0 +1,18 @@
+# Maven
+/target/
+
+# Arquivos de distribuição
+/dist/
+
+# Configurações particulares do NetBeans
+/nbproject/private/
+
+# Banco de dados local
+meu_banco.sqlite
+*.sqlite-journal
+
+# Arquivos compilados
+*.class
+
+# Logs
+*.log

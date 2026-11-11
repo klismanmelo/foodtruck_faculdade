@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="720.0" prefWidth="1180.0"
+            stylesheets="@estilos.css"
+            xmlns="http://javafx.com/javafx/26"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ifrs.ibiruba.exemplo_bd.controller.TelaPrincipalController">
+    <top>
+        <VBox styleClass="cabecalho">
+            <padding>
+                <Insets bottom="20.0" left="28.0" right="28.0" top="20.0" />
+            </padding>
+            <children>
+                <HBox alignment="CENTER_LEFT" spacing="12.0">
+                    <children>
+                        <Label styleClass="marca" text="FOOD TRUCK" />
+                        <Label styleClass="titulo" text="Administração do cardápio" />
+                    </children>
+                </HBox>
+                <Label styleClass="subtitulo" text="Cadastre categorias, produtos e complementos disponíveis para os pedidos." />
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <TabPane fx:id="tabPanePrincipal" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Categorias">
+                    <content>
+                        <fx:include fx:id="categoriasConteudo" source="tela-categorias.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Produtos">
+                    <content>
+                        <fx:include fx:id="produtosConteudo" source="tela-produtos.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Complementos">
+                    <content>
+                        <fx:include fx:id="complementosConteudo" source="tela-complementos.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Pedidos">
+                    <content>
+                        <fx:include fx:id="pedidosConteudo" source="tela-pedidos.fxml" />
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>

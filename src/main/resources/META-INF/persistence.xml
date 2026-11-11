@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.2" xmlns="https://jakarta.ee/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_2.xsd">
+  <persistence-unit name="minha_conexao" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <class>ifrs.ibiruba.exemplo_bd.model.Categoria</class>
+    <class>ifrs.ibiruba.exemplo_bd.model.Complemento</class>
+    <class>ifrs.ibiruba.exemplo_bd.model.Produto</class>
+    <class>ifrs.ibiruba.exemplo_bd.model.Pedido</class>
+    <class>ifrs.ibiruba.exemplo_bd.model.ItemPedido</class>
+    <class>org.hibernate.audit.DefaultChangelog</class>
+    <class>org.hibernate.audit.DefaultTrackingModifiedEntitiesChangelog</class>
+    <properties>
+      <property name="jakarta.persistence.jdbc.driver" value="org.sqlite.JDBC"/>
+      <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlite:meu_banco.sqlite"/>
+      <property name="jakarta.persistence.jdbc.user" value=""/>
+      <property name="jakarta.persistence.jdbc.password" value=""/>
+      <property name="hibernate.dialect" value="org.hibernate.community.dialect.SQLiteDialect"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>

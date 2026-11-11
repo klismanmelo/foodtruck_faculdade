@@ -1,0 +1,147 @@
+.root {
+    -fx-font-family: "System";
+    -fx-font-size: 13px;
+    -fx-background-color: #f2f4f7;
+}
+
+.cabecalho {
+    -fx-background-color: linear-gradient(to right, #26364a, #344b65);
+}
+
+.marca {
+    -fx-background-color: #2fb36f;
+    -fx-background-radius: 5px;
+    -fx-padding: 5 9;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.titulo {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.subtitulo {
+    -fx-text-fill: #dbe5ef;
+    -fx-padding: 7 0 0 0;
+}
+
+.tab-pane > .tab-header-area {
+    -fx-padding: 10 28 0 28;
+}
+
+.tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color: #ffffff;
+}
+
+.tab {
+    -fx-background-color: transparent;
+    -fx-padding: 9 18;
+}
+
+.tab:selected {
+    -fx-background-color: #e6f6ee;
+    -fx-background-radius: 8 8 0 0;
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: #147447;
+    -fx-font-weight: bold;
+}
+
+.cartao-formulario,
+.cartao-tabela {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-color: #dce2e8;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(22, 34, 49, 0.08), 12, 0.18, 0, 3);
+}
+
+.titulo-secao {
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #25364a;
+}
+
+.texto-apoio,
+.dica {
+    -fx-text-fill: #6c7885;
+}
+
+.dica {
+    -fx-font-size: 12px;
+}
+
+.contador {
+    -fx-background-color: #edf1f5;
+    -fx-background-radius: 12px;
+    -fx-padding: 5 10;
+    -fx-text-fill: #526170;
+}
+
+.text-field,
+.text-area,
+.combo-box,
+.list-view,
+.table-view {
+    -fx-border-color: #ccd5df;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+}
+
+.text-field:focused,
+.text-area:focused,
+.combo-box:focused,
+.list-view:focused,
+.table-view:focused {
+    -fx-border-color: #2c9b64;
+}
+
+.button {
+    -fx-background-color: #e8edf2;
+    -fx-background-radius: 6px;
+    -fx-text-fill: #283848;
+    -fx-font-weight: bold;
+    -fx-padding: 8 13;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #dce4eb;
+}
+
+.botao-primario {
+    -fx-background-color: #238b57;
+    -fx-text-fill: white;
+}
+
+.botao-primario:hover {
+    -fx-background-color: #197648;
+}
+
+.botao-perigo {
+    -fx-background-color: #fbe9e7;
+    -fx-text-fill: #a73a2d;
+}
+
+.botao-perigo:hover {
+    -fx-background-color: #f5d3cf;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #edf1f5;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: transparent;
+    -fx-size: 38px;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #cfeede;
+    -fx-text-background-color: #173c2b;
+}
